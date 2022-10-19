@@ -1,3 +1,10 @@
+## 自动化captions (transformers的版本不要过高，否则模型推理会出错)
+在demo.ipynb里查看一下需要安装的包
+```
+python generate_huggingface_meta.py --data /path/to/images/
+```
+会在/path/to/images/下面生成一个metadata.jsonl文件，内容符合huggingface的datasets结构，可以作为local数据集直接上[text_to_image](https://github.com/huggingface/diffusers/tree/main/examples/text_to_image)训
+
 ## BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation
 
 ## Announcement: BLIP is now officially integrated into [LAVIS](https://github.com/salesforce/LAVIS) - a one-stop library for language-and-vision research and applications!
